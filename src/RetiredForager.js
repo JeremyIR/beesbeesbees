@@ -6,7 +6,7 @@ var RetiredForagerBee = function() {
   this.color = 'grey';
 
 };
-RetiredForagerBee.prototype = new Grub();
+RetiredForagerBee.prototype = Object.create(Grub.prototype);
 RetiredForagerBee.prototype.forage = function(treasure) {
   return 'I am too old, let me play cards instead';
 };
